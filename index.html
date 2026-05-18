@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Data/webdesign/Atipria_logo-removebg-preview.png">
+    <title>Atipria website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Css-files/payment.css">
+    <link rel="stylesheet" href="Css-files/signup.css">
+    <link rel="stylesheet" href="Css-files/Cube.css">
+    <link rel="stylesheet" href="Media.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo"><img src="Data/webdesign/Atipria_logo-removebg-preview.png" alt="Atipria Logo" class="logo-img">Atipria</div>
+        <nav class="nav">
+            <a class="nav-link" href="index.html" id="nav-home">Home</a>
+            <a class="nav-link" href="#" id="nav-AboutUs">About Us</a>
+            <a class="nav-link" href="#" id="nav-Pricing">Pricing</a>
+            <a class="nav-link" href="#" id="nav-contact">Contact</a>
+            <a class="nav-link" href="#" id="nav-SignIn">Sign In</a>
+            <a class="nav-link" href="#" id="nav-Account" style="display:none;">My Account</a>
+        </nav>
+    </header>
+
+    <div id="dynamic-content"></div>
+
+    <!-- HERO SECTION -->
+    <main class="main">
+        <div class="main-content">
+            <p class="text-gray-400 mb-2" id="welcome-text">👋 Welcome</p>
+            <h1 class="title" id="main-title"></h1>
+            <p class="subtitle">"Know the Truth. Trust the Real"<br> AI-powered reality verification</p>
+            <p class="description">
+                Your ultimate digital security solution in the modern age! We protect you from seeing false content and from selling your personal information to external and unnecessary companies.
+            </p>
+            <div class="button-group">
+                <button class="gradient-button" onclick="toggleComparison()">Learn about this technology <i class="fas fa-arrow-right"></i></button>
+                <button class="gradient-button" onclick="toggleTable()">Get Started <i class="fas fa-download"></i></button>
+            </div>
+        </div>
+        <div class="image-container">
+            <div class="container">
+              <div class="cube" style="--x:-1;--y:-1;--z:-1;--fz:0"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:-1;--fz:1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:-1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:-1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:-1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:-1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:0;--fz:0"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:0;--fz:1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:0;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:0;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:0;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:0;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:1;--fz:0"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:1;--fz:1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:-1;--y:-1;--z:1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:-1;--fz:0"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:-1;--fz:1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:-1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:-1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:-1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:-1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:0;--fz:0"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:0;--fz:1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:0;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:0;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:0;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:0;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:1;--fz:0"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:1;--fz:1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:-1;--y:0;--z:1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:-1;--fz:0"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:-1;--fz:1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:-1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:-1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:-1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:-1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:0;--fz:0"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:0;--fz:1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:0;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:0;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:0;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:0;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:1;--fz:0"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:1;--fz:1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:-1;--y:1;--z:1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:-1;--fz:0"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:-1;--fz:1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:-1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:-1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:-1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:-1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:0;--fz:0"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:0;--fz:1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:0;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:0;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:0;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:0;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:1;--fz:0"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:1;--fz:1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:0;--y:-1;--z:1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:-1;--fz:0"></div>
+              <div class="cube" style="--x:0;--y:0;--z:-1;--fz:1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:-1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:-1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:-1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:-1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:0;--fz:0"></div>
+              <div class="cube" style="--x:0;--y:0;--z:0;--fz:1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:0;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:0;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:0;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:0;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:1;--fz:0"></div>
+              <div class="cube" style="--x:0;--y:0;--z:1;--fz:1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:0;--y:0;--z:1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:-1;--fz:0"></div>
+              <div class="cube" style="--x:0;--y:1;--z:-1;--fz:1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:-1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:-1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:-1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:-1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:0;--fz:0"></div>
+              <div class="cube" style="--x:0;--y:1;--z:0;--fz:1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:0;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:0;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:0;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:0;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:1;--fz:0"></div>
+              <div class="cube" style="--x:0;--y:1;--z:1;--fz:1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:0;--y:1;--z:1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:-1;--fz:0"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:-1;--fz:1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:-1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:-1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:-1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:-1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:0;--fz:0"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:0;--fz:1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:0;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:0;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:0;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:0;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:1;--fz:0"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:1;--fz:1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:1;--y:-1;--z:1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:-1;--fz:0"></div>
+              <div class="cube" style="--x:1;--y:0;--z:-1;--fz:1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:-1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:-1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:-1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:-1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:0;--fz:0"></div>
+              <div class="cube" style="--x:1;--y:0;--z:0;--fz:1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:0;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:0;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:0;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:0;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:1;--fz:0"></div>
+              <div class="cube" style="--x:1;--y:0;--z:1;--fz:1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:1;--y:0;--z:1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:-1;--fz:0"></div>
+              <div class="cube" style="--x:1;--y:1;--z:-1;--fz:1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:-1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:-1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:-1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:-1;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:0;--fz:0"></div>
+              <div class="cube" style="--x:1;--y:1;--z:0;--fz:1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:0;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:0;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:0;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:0;--ry:1;--fy:1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:1;--fz:0"></div>
+              <div class="cube" style="--x:1;--y:1;--z:1;--fz:1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:1;--rx:1;--fx:-1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:1;--rx:1;--fx:1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:1;--ry:1;--fy:-1"></div>
+              <div class="cube" style="--x:1;--y:1;--z:1;--ry:1;--fy:1"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Versions list -->
+    <section id="versionContainer" class="hidden version-container">
+        <h2 id="versionTitle" class="version-title hidden">Available Versions</h2>
+        <table id="versionTable" class="version-table">
+            <thead>
+                <tr>
+                    <th>Version</th>
+                    <th>Description</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.0.0</td>
+                    <td>First version of the plugin</td>
+                    <td><button class="download-btn" onclick="">Expired</button></td>
+                    <!--Please replace the "Coming soon" text with "Download" after release -->
+                </tr>
+                <tr>
+                    <td>1.1.0</td>
+                    <td>Bug fixes and improvements + Side 3 scan</td>
+                    <td><button class="download-btn" onclick="">Expired</button></td>
+                    <!--Please replace the "Coming soon" text with "Download" after release -->
+                </tr>
+                <tr>
+                    <td>1.1.5</td>
+                    <td>Changing the UI + improving the UX</td>
+                    <td><button class="download-btn" onclick="">Expired</button></td>
+                    <!--Please replace the "Coming soon" text with "Download" after release -->
+                </tr>
+                <tr>
+                    <td>1.1.6</td>
+                    <td>Doms + efficiency upgrade</td>
+                    <td><button class="download-btn" onclick="installVersion('1.1.6')">Coming soon</button></td>
+                    <!--Please replace the "Coming soon" text with "Download" after release -->
+                </tr>
+                <tr>
+                    <td>1.1.7</td>
+                    <td>Continuous use fix + permanent interface creation</td>
+                    <td><button class="download-btn" onclick="installVersion('1.1.7')">Coming soon</button></td>
+                    <!--Please replace the "Coming soon" text with "Download" after release -->
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Learn more -->
+    <div id="additionalContentSideBySide" class="content-container">
+        <h2 class="content-title">Fake vs. Real Content Comparison</h2>
+        <p class="content-description">
+            In this section, we present a direct comparison between fake content and authentic content.
+            By displaying images or examples of both fake and real content side by side, you can better
+            understand how to distinguish between genuine content and content that claims to be real but is actually fake.
+        </p>
+
+        <div class="comparison-grid">
+            <!-- זוג 1 -->
+            <div class="comparison-pair">
+                <div class="comparison-item">
+                    <img src="Data/images/fake/fake_image_1.jpg" alt="Fake Content 1">
+                    <p>Fake Content 1</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="Data/images/real/real_image_1.jpg" alt="Real Content 1">
+                    <p>Real Content 1</p>
+                </div>
+            </div>
+
+            <!-- זוג 2 -->
+            <div class="comparison-pair">
+                <div class="comparison-item">
+                    <img src="Data/images/fake/fake_image_2.jpg" alt="Fake Content 2">
+                    <p>Fake Content 2</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="Data/images/real/real_image_2.jpg" alt="Real Content 2">
+                    <p>Real Content 2</p>
+                </div>
+            </div>
+
+            <!-- זוג 3 -->
+            <div class="comparison-pair">
+                <div class="comparison-item">
+                    <img src="Data/images/fake/fake_image_3.jpg" alt="Fake Content 3">
+                    <p>Fake Content 3</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="Data/images/real/real_image_3.jpg" alt="Real Content 3">
+                    <p>Real Content 3</p>
+                </div>
+            </div>
+
+            <!-- זוג 4 -->
+            <div class="comparison-pair">
+                <div class="comparison-item">
+                    <img src="Data/images/fake/fake_image_4.jpg" alt="Fake Content 4">
+                    <p>Fake Content 4</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="Data/images/real/real_image_4.jpg" alt="Real Content 4">
+                    <p>Real Content 4</p>
+                </div>
+            </div>
+
+            <!-- זוג 5 -->
+            <div class="comparison-pair">
+                <div class="comparison-item">
+                    <img src="Data/images/fake/fake_image_5.jpg" alt="Fake Content 5">
+                    <p>Fake Content 5</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="Data/images/real/real_image_5.jpg" alt="Real Content 5">
+                    <p>Real Content 5</p>
+                </div>
+            </div>
+
+            <!-- זוג 6 -->
+            <div class="comparison-pair">
+                <div class="comparison-item">
+                    <img src="Data/images/fake/fake_image_6.jpg" alt="Fake Content 6">
+                    <p>Fake Content 6</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="Data/images/real/real_image_6.jpg" alt="Real Content 6">
+                    <p>Real Content 6</p>
+                </div>
+            </div>
+
+            <!-- זוג 7 -->
+            <div class="comparison-pair">
+                <div class="comparison-item">
+                    <img src="Data/images/fake/fake_image_7.jpg" alt="Fake Content 7">
+                    <p>Fake Content 7</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="Data/images/real/real_image_7.jpg" alt="Real Content 7">
+                    <p>Real Content 7</p>
+                </div>
+            </div>
+
+            <!-- זוג 8 -->
+            <div class="comparison-pair">
+                <div class="comparison-item">
+                    <img src="Data/images/fake/fake_image_8.jpg" alt="Fake Content 8">
+                    <p>Fake Content 8</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="Data/images/real/real_image_8.jpg" alt="Real Content 8">
+                    <p>Real Content 8</p>
+                </div>
+            </div>
+
+            <!-- זוג 9 -->
+            <div class="comparison-pair">
+                <div class="comparison-item">
+                    <img src="Data/images/fake/fake_image_9.jpg" alt="Fake Content 9">
+                    <p>Fake Content 9</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="Data/images/real/real_image_9.jpg" alt="Real Content 9">
+                    <p>Real Content 9</p>
+                </div>
+            </div>
+
+            <!-- זוג 10 -->
+            <div class="comparison-pair">
+                <div class="comparison-item">
+                    <img src="Data/images/fake/fake_image_10.jpg" alt="Fake Content 10">
+                    <p>Fake Content 10</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="Data/images/real/real_image_10.jpg" alt="Real Content 10">
+                    <p>Real Content 10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-choose-us" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Why Choose Atipria?</h2>
+        <div class="features-container">
+            <div class="feature">
+                <i class="fas fa-brain"></i>
+                <h3>AI-Powered Detection</h3>
+                <p>Our technology detects deepfakes with 80% accuracy.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-user-shield"></i>
+                <h3>Privacy Protection</h3>
+                <p>We ensure your personal data stays secure.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-clock"></i>
+                <h3>Real-Time Analysis</h3>
+                <p>Fast and accurate detection in just seconds.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER TESTIMONIALS -->
+    <section class="testimonials" data-aos="fade-up" data-aos-duration="1000">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Atipria prevented many employees from entering Step 3 files into the company's systems!"</p>
+                <h4>Avital Gladkih - CEO</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I can finally trust online content again. Amazing tool!"</p>
+                <h4>Michael Lee, Content Creator</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works" data-aos="fade-up" data-aos-duration="1000">
+        <h2>How It Works</h2>
+        <div class="steps-container">
+            <div class="step">
+                <i class="fas fa-upload"></i>
+                <h3>Step 1: Install the system</h3>
+                <p>Activate and mobilize its work</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-search"></i>
+                <h3>Step 2: AI Scans Content</h3>
+                <p>Our AI detects any deepfake elements.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-check-circle"></i>
+                <h3>Step 3: Get Your Results</h3>
+                <p>Receive an in-depth report in seconds.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Frequently Asked Questions</h2>
+        <table class="faq-table">
+            <thead>
+                <tr>
+                    <th>Question</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="faq-row">
+                    <td>How accurate is Atipria's detection?</td>
+                </tr>
+                <tr class="faq-answer">
+                    <td>Our AI detects deepfakes with up to 80% accuracy, using cutting-edge deep learning models.</td>
+                </tr>
+
+                <tr class="faq-row">
+                    <td>Is my data secure?</td>
+                </tr>
+                <tr class="faq-answer">
+                    <td>Yes, we use advanced encryption protocols to ensure your data remains private and protected.</td>
+                </tr>
+
+                <tr class="faq-row">
+                    <td>How long does the detection process take?</td>
+                </tr>
+                <tr class="faq-answer">
+                    <td>Typically, it takes only a few seconds to analyze an image or video, but complex media may take up to a minute.</td>
+                </tr>
+
+                <tr class="faq-row">
+                    <td>Can I use Atipria for live video detection?</td>
+                </tr>
+                <tr class="faq-answer">
+                    <td>Yes! Our system can analyze live video streams and provide real-time deepfake detection.</td>
+                </tr>
+
+                <tr class="faq-row">
+                    <td>Do I need any special hardware to use Atipria?</td>
+                </tr>
+                <tr class="faq-answer">
+                    <td>No, Atipria runs on the cloud, so you only need a stable internet connection to use our service.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- PRICING PLANS -->
+    <section class="pricing" data-aos="fade-up" data-aos-duration="1000">
+      <div class="titles">
+        <h1 class="Main-pricing-title">Pricing Plans</h1>
+        <p class="Main-pricing-subtitle">Choose the best plan for your needs.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3 class="plan-title">Free Plan</h3>
+          <p class="plan-description">Basic features for personal use.</p>
+          <p class="plan-price">$0 / month</p>
+          <ul class="plan-features">
+            <li>✔ Basic Deepfake Detection</li>
+            <li>✔ Limited Image Recognition</li>
+            <li>✖ Advanced Security Solutions</li>
+            <li>✔ Devices: 1 device</li>
+          </ul>
+          <button class="plan-btn get-started-btn" data-show="Pricing-page">Get Started</button>
+        </div>
+
+        <div class="pricing-card">
+          <div class="discount-bubble">Sale!!</div>
+          <h3 class="plan-title">Premium Plan</h3>
+          <p class="plan-description">Advanced features for professionals.</p>
+          <p class="plan-price">
+            <span class="old-price">$19.99 / month</span>
+            <br>
+            <span class="new-price">$9.99 / month</span>
+          </p>
+          <ul class="plan-features">
+            <li>✔ Advanced Deepfake Detection</li>
+            <li>✔ Full Image Recognition</li>
+            <li>✔ AI-Powered Security Solutions</li>
+            <li>✔ Devices: 5 devices</li>
+          </ul>
+          <button class="plan-btn upgrade-btn" data-show="Pricing-page">Upgrade Now</button>
+        </div>
+
+        <div class="pricing-card">
+          <div class="discount-bubble">Sale!!</div>
+          <h3 class="plan-title">Business Plan</h3>
+          <p class="plan-description">Comprehensive solutions for businesses.</p>
+          <p class="plan-price">
+            <span class="old-price">$49.99 / month</span>
+            <br>
+            <span class="new-price">$24.99 / month</span>
+          </p>
+          <ul class="plan-features">
+            <li>✔ Enterprise Deepfake Detection</li>
+            <li>✔ Bulk Image Processing</li>
+            <li>✔ Custom AI Security Features</li>
+            <li>✔ Devices: 20 devices</li>
+          </ul>
+          <button class="plan-btn get-business-btn" data-show="Pricing-page">Get Business</button>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="pricing-card">
+          <h3 class="plan-title">Enterprise Plan</h3>
+          <p class="plan-description">Ultimate security and AI solutions for enterprises.</p>
+          <p class="plan-price">Contact Sales for pricing</p>
+          <ul class="plan-features">
+            <li>✔ AI-Powered Deepfake & Fraud Detection</li>
+            <li>✔ Unlimited Image Recognition</li>
+            <li>✔ Dedicated AI Security Consultant</li>
+            <li>✔ Devices: Unlimited devices</li>
+          </ul>
+          <button class="plan-btn contact-sales-btn" data-show="Pricing-page">Contact Sales</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="AboutUs">
+        <div class="titles">
+            <h1>About Us</h1>
+            <p>Learn more about our mission and values.</p>
+        </div>
+
+        <div class="InfoInPage">
+            <div class="info-box">
+                <h3>Our Mission</h3>
+                <p>At Atipria, our mission is to provide advanced AI solutions to detect deepfakes and ensure the authenticity of digital content, while safeguarding user privacy and preventing misuse of content on social media platforms.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Our Values</h3>
+                <p>We prioritize integrity, innovation, and excellence in everything we do. Our goal is to create a safer digital world by developing advanced technologies that protect user privacy and ensure the authenticity of digital content.</p>
+            </div>
+        </div>
+
+        <div class="founders-container">
+            <h3>Our Founders</h3>
+
+            <div class="founder-item">
+                <a href="https://blackwolfalpha.github.io/Avital_SelfDescription/" target="_blank">
+                    <img src="Data/webdesign/avital-ceo.png" alt="Founder 1">
+                </a>
+                <div>
+                    <h4>Avital Gladkih - CEO</h4>
+                    <p>Avital is a creative and innovative entrepreneur with a passion for art and technology who understands modern design and software.</p>
+                </div>
+            </div>
+
+            <div class="founder-item">
+                <img src="Data/webdesign/tifferet-cmo.jpg" alt="Founder 2">
+                <div>
+                    <h4>Tifferet Jacob - CMO</h4>
+                    <p>An experienced marketer in the modern digital space who is aware of the rapidly changing dangers in the environment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Pricing-page" class="pricing">
+        <div class="titles">
+            <h1 class="Main-pricing-title">Pricing Plans</h1>
+            <p class="Main-pricing-subtitle">Choose the best plan for your needs.</p>
+        </div>
+        <div class="pricing-grid">
+            <!-- Free Plan - ללא הנחה -->
+            <div class="pricing-card">
+                <h3 class="plan-title">Free Plan</h3>
+                <p class="plan-description">Basic features for personal use.</p>
+                <p class="plan-price">Price: $0 / month</p>
+                <ul class="plan-features">
+                    <li>✔ Basic Deepfake Detection</li>
+                    <li>✔ Limited Image Recognition</li>
+                    <li>✖ Advanced Security Solutions</li>
+                    <li>✔ Devices: 1 device</li>
+                </ul>
+                <button class="plan-btn get-started-btn"
+                    data-plan-title="Free Plan"
+                    data-plan-price="$0 / month"
+                    data-plan-details="Basic Deepfake Detection, Limited Image Recognition, Devices: 1 device">
+                    Get Started
+                </button>
+            </div>
+            <!-- Premium Plan עם הנחה -->
+            <div class="pricing-card">
+                <div class="discount-bubble">Sale!!</div>
+                <h3 class="plan-title">Premium Plan</h3>
+                <p class="plan-description">Advanced features for professionals.</p>
+                <p class="plan-price">
+                    Price: <span class="old-price">$19.99 / month</span><br>
+                    <span class="new-price">$9.99 / month</span>
+                </p>
+                <ul class="plan-features">
+                    <li>✔ Advanced Deepfake Detection</li>
+                    <li>✔ Full Image Recognition</li>
+                    <li>✔ AI-Powered Security Solutions</li>
+                    <li>✔ Devices: 5 devices</li>
+                </ul>
+                <button class="plan-btn upgrade-btn"
+                    data-plan-title="Premium Plan"
+                    data-plan-price="$9.99 / month"
+                    data-plan-details="Advanced Deepfake Detection, Full Image Recognition, AI-Powered Security Solutions, Devices: Up to 5 devices">
+                    Upgrade Now
+                </button>
+            </div>
+            <!-- Business Plan עם הנחה -->
+            <div class="pricing-card">
+                <div class="discount-bubble">Sale!!</div>
+                <h3 class="plan-title">Business Plan</h3>
+                <p class="plan-description">Comprehensive solutions for businesses.</p>
+                <p class="plan-price">
+                    Price: <span class="old-price">$49.99 / month</span><br>
+                    <span class="new-price">$24.99 / month</span>
+                </p>
+                <ul class="plan-features">
+                    <li>✔ Enterprise Deepfake Detection</li>
+                    <li>✔ Bulk Image Processing</li>
+                    <li>✔ Custom AI Security Features</li>
+                    <li>✔ Devices: 20 devices</li>
+                </ul>
+                <button class="plan-btn get-business-btn"
+                    data-plan-title="Business Plan"
+                    data-plan-price="$24.99 / month"
+                    data-plan-details="Enterprise Deepfake Detection, Bulk Image Processing, Custom AI Security Features, Devices: Up to 20 devices">
+                    Get Business
+                </button>
+            </div>
+            <!-- Enterprise Plan - ללא הנחה -->
+            <div class="pricing-card">
+                <h3 class="plan-title">Enterprise Plan</h3>
+                <p class="plan-description">Ultimate security and AI solutions for enterprises.</p>
+                <p class="plan-price">Price: Contact Sales for pricing</p>
+                <ul class="plan-features">
+                    <li>✔ AI-Powered Deepfake & Fraud Detection</li>
+                    <li>✔ Unlimited Image Recognition</li>
+                    <li>✔ Dedicated AI Security Consultant</li>
+                    <li>✔ Devices: Unlimited devices</li>
+                </ul>
+                <button class="plan-btn contact-sales-btn"
+                    data-plan-title="Enterprise Plan"
+                    data-plan-price="Contact Sales"
+                    data-plan-details="AI-Powered Deepfake & Fraud Detection, Unlimited Image Recognition, Dedicated AI Security Consultant, Devices: Unlimited">
+                    Contact Sales
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal HTML -->
+        <div id="purchase-modal">
+            <div class="modal-wrapper">
+                <span id="close-modal">&times;</span>
+                <div class="modal-container">
+                    <div class="modal-left">
+                        <div class="payment-info">
+                            <p class="plan-name text-lg"></p>
+                            <p class="plan-price text-6xl"></p>
+                            <p class="mt-4 text-sm">Package Details:</p>
+                            <ul class="package-list"></ul>
+                        </div>
+                    </div>
+                    <div class="modal-right">
+                        <div class="payment-header">
+                            <h1 class="text-2xl font-bold">Payments</h1>
+                            <div class="payment-logos">
+                              <img alt="Visa logo" src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"/>
+                              <img alt="MasterCard logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"/>
+                              <img alt="American Express logo" src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg"/>
+                              <img alt="Discover logo" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Discover.png"/>
+                            </div>
+                        </div>
+                        <form id="payment-form">
+                            <div class="form-group">
+                                <label>Credit card number</label>
+                                <input id="creditCardInput" type="text" inputmode="numeric" placeholder="4584  ****  ****  ****" maxlength="19">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group half">
+                                    <label>Expiration</label>
+                                    <select id="expiration-month">
+                                        <option value="">Month</option>
+                                        <option>January</option>
+                                        <option>February</option>
+                                        <option>March</option>
+                                        <option>April</option>
+                                        <option>May</option>
+                                        <option>June</option>
+                                        <option>July</option>
+                                        <option>August</option>
+                                        <option>September</option>
+                                        <option>October</option>
+                                        <option>November</option>
+                                        <option>December</option>
+                                    </select>
+                                </div>
+                                <div class="form-group half">
+                                    <label>Year</label>
+                                    <select id="expiration-year">
+                                        <option value="">Year</option>
+                                        <option>2023</option>
+                                        <option>2024</option>
+                                        <option>2025</option>
+                                        <option>2026</option>
+                                        <option>2027</option>
+                                        <option>2028</option>
+                                        <option>2029</option>
+                                        <option>2030</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>CVC/CVV</label>
+                                <input id="cvcInput" type="text" inputmode="numeric" placeholder="3 or 4 digits code" maxlength="4">
+                            </div>
+                            <div class="form-group">
+                                <label>Supported Companies</label>
+                                <select id="supported-company">
+                                    <option value="">Select Company</option>
+                                    <option>Visa</option>
+                                    <option>MasterCard</option>
+                                    <option>American Express</option>
+                                    <option>Discover</option>
+                                    <option>PayPal</option>
+                                    <option>Apple Pay</option>
+                                    <option>Google Pay</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="pay-now-btn">Pay Now</button>
+                        </form>
+                        <!-- Element for payment feedback -->
+                        <div id="payment-feedback"></div>
+                        <div class="alternate-payment">
+                            <p>or select other payment method</p>
+                            <button class="paypal-btn">Pay with <span class="font-bold">PayPal</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="downgrade-popup-backdrop" class="popup-backdrop" style="display:none;">
+    <div id="downgrade-popup" class="popup-card">
+      <h3 style="margin:0 0 8px;">Are you sure you want to cancel?</h3>
+      <p style="margin:0 0 12px;">
+        You currently have a higher package than the one you selected.
+        To purchase a lower package, you must first mark that the current package will be canceled at the end of the period.
+      </p>
+      <div style="display:flex;gap:8px;justify-content:flex-end;">
+        <button id="downgrade-cancel" class="btn">No,Go back</button>
+        <button id="downgrade-confirm" class="btn primary">Yes, cancel at the end of the month</button>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <section id="contact">
+        <div class="titles">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any inquiries or support.</p>
+        </div>
+
+        <form id="contact-form">
+            <div class="field">
+              <input type="text" id="name" name="name" placeholder="Enter your name" required />
+              <i class="fas fa-user"></i>
+            </div>
+
+            <div class="field">
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+              <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="field">
+              <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+
+            <button type="submit">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+
+        <div id="request-popup" class="request-popup">
+          <p id="popup-message"></p>
+        </div>
+    </section>
+
+    <section id="SignIn">
+      <div class="input-document">
+        <div class="sign-tabs">
+          <button class="sign-tab-btn active" onclick="switchTab('sign-in')" type="button">Sign In</button>
+          <button class="sign-tab-btn" onclick="switchTab('sign-up')" type="button">Sign Up</button>
+        </div>
+
+        <!-- SIGN IN -->
+        <form id="sign-in" class="active">
+          <input id="signin-email" type="email" placeholder="Email address" required />
+          <input id="signin-password" type="password" placeholder="Password" minlength="6" required />
+          <div class="signin-check-box">
+            <label><input id="remember-me" type="checkbox" /> Remember me</label>
+            <a href="#" id="forgot-link">Forgot password?</a>
+          </div>
+          <button class="sign-primary-btn" type="submit">Sign In</button>
+          <div class="sign-divider">
+            <div></div><span>or</span><div></div>
+          </div>
+          <div id="google-signin" class="sign-social-btn">
+            <i class="fab fa-google"></i> Continue with Google
+          </div>
+          <div id="facebook-signin" class="sign-social-btn">
+            <i class="fab fa-facebook-f"></i> Continue with Facebook
+          </div>
+          <p id="signin-feedback" class="form-feedback"></p>
+        </form>
+
+        <!-- SIGN UP -->
+        <form id="sign-up" class="hidden">
+          <input id="signup-name" type="text" placeholder="Full name" required />
+          <input id="signup-company" type="text" placeholder="Company / organization name" />
+          <input id="signup-email" type="email" placeholder="Email address" required />
+          <input id="signup-phone" type="tel" placeholder="Phone number" />
+          <input id="signup-password" type="password" placeholder="Password (min 6 chars)" minlength="6" required />
+          <input id="signup-password2" type="password" placeholder="Confirm password" minlength="6" required />
+          <button class="sign-primary-btn" type="submit">Sign Up</button>
+          <div class="sign-divider">
+            <div></div><span>or</span><div></div>
+          </div>
+          <div id="google-signup" class="sign-social-btn">
+            <i class="fab fa-google"></i> Continue with Google
+          </div>
+          <div id="facebook-signup" class="sign-social-btn">
+            <i class="fab fa-facebook-f"></i> Continue with Facebook
+          </div>
+          <p id="signup-feedback" class="form-feedback"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="UserArea" style="display:none;">
+      <div class="titles">
+        <h1>My Account</h1>
+        <p>Manage your profile and view your plan & purchases.</p>
+      </div>
+
+      <div class="input-document" style="max-width:880px;margin:auto;">
+        <!-- Profile card -->
+        <div class="profile-card" style="padding:16px;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:16px;">
+          <h3>Profile</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px;">
+            <input id="ua-name"    type="text"  placeholder="Full name">
+            <input id="ua-email"   type="email" placeholder="Email" disabled>
+            <input id="ua-phone"   type="tel"   placeholder="Phone">
+            <input id="ua-company" type="text"  placeholder="Company">
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <button id="ua-save" class="sign-primary-btn" type="button">Save changes</button>
+            <button id="ua-reset" class="sign-primary-btn" type="button">Reset password</button>
+            <button id="ua-delete" class="sign-primary-btn" type="button" style="background:#ef4444;">Delete account</button>
+          </div>
+          <p id="ua-feedback" class="form-feedback"></p>
+        </div>
+
+        <!-- Current plan -->
+        <div class="plan-card" style="padding:16px;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:16px;">
+          <h3>Current Plan</h3>
+          <p id="ua-plan">Loading…</p>
+        </div>
+
+        <!-- Purchases table -->
+        <div class="purchases-card" style="padding:16px;border:1px solid #e5e7eb;border-radius:12px;">
+          <h3>Purchases</h3>
+          <table style="width:100%;border-collapse:collapse;">
+            <thead>
+              <tr>
+                <th style="text-align:left;border-bottom:1px solid #e5e7eb;padding:8px;">Date</th>
+                <th style="text-align:left;border-bottom:1px solid #e5e7eb;padding:8px;">Plan</th>
+                <th style="text-align:left;border-bottom:1px solid #e5e7eb;padding:8px;">Method</th>
+                <th style="text-align:left;border-bottom:1px solid #e5e7eb;padding:8px;">Amount ($)</th>
+                <th style="text-align:left;border-bottom:1px solid #e5e7eb;padding:8px;">Card ••••</th>
+              </tr>
+            </thead>
+            <tbody id="ua-purchases"><tr><td style="padding:8px;" colspan="5">Loading…</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div id="loading-screen">
+      <div class="loading-spinner"></div>
+      <p>Loading your plan...</p>
+    </div>
+
+    <div id="auth-popup-backdrop"></div>
+    <div id="auth-popup">
+      <div class="card">
+        <h3 style="margin:0 0 8px">Need to connect</h3>
+        <p style="margin:0 0 12px">To complete a purchase, log in or register on the site.</p>
+        <div class="actions">
+          <button id="auth-popup-cancel" class="btn">Cancel</button>
+          <button id="auth-popup-go" class="btn primary">Login/register</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 InoviteFuture - Atipria, All rights reserved.</p>
+    </footer>
+
+<script src="JAVA/welcome.js"></script>
+<script src="JAVA/UserInfo.js"></script>
+
+<script>
+  emailjs.init("JU3WF_cvPQycgSfmp");
+
+  function showPopup(message) {
+    const popup = document.getElementById("request-popup");
+    const popupMessage = document.getElementById("popup-message");
+
+    popupMessage.textContent = message;
+    popup.classList.add("show");
+
+    setTimeout(() => {
+      popup.classList.remove("show");
+    }, 3000);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      emailjs.sendForm("default_service", "template_uw9jrcq", this)
+        .then(function () {
+          showPopup("✅The message was sent successfully, the support team will do their best to get back to you as soon as possible!");
+          form.reset();
+        }, function (error) {
+          showPopup("❌ An error occurred while sending the request, please try again.");
+          console.error("EmailJS Error:", error);
+        });
+    });
+  });
+
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+
+  document.onkeydown = function(e) {
+    if (e.keyCode === 123) {
+      return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+      return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
+      return false;
+    }
+    if (e.ctrlKey && e.keyCode === 85) {
+      return false;
+    }
+  };
+
+  function switchTab(tab) {
+    const signInForm = document.getElementById("sign-in");
+    const signUpForm = document.getElementById("sign-up");
+    const signInTab = document.querySelector("#SignIn .sign-tab-btn:nth-child(1)");
+    const signUpTab = document.querySelector("#SignIn .sign-tab-btn:nth-child(2)");
+
+    if (tab === "sign-in") {
+      signInForm.classList.remove("hidden");
+      signInForm.classList.add("active");
+      signUpForm.classList.add("hidden");
+      signUpForm.classList.remove("active");
+
+      signInTab.classList.add("active");
+      signUpTab.classList.remove("active");
+    } else {
+      signUpForm.classList.remove("hidden");
+      signUpForm.classList.add("active");
+      signInForm.classList.add("hidden");
+      signInForm.classList.remove("active");
+
+      signUpTab.classList.add("active");
+      signInTab.classList.remove("active");
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".plan-btn").forEach(button => {
+        button.addEventListener("click", function () {
+          const targetId = this.dataset.show;
+
+          if (targetId) {
+            const loadingScreen = document.getElementById("loading-screen");
+
+            loadingScreen.classList.add("show");
+
+            setTimeout(() => {
+              loadingScreen.classList.remove("show");
+
+              document.querySelectorAll("body > *:not(header):not(footer)").forEach(el => {
+                el.style.display = "none";
+              });
+
+              const targetSection = document.getElementById(targetId);
+              if (targetSection) {
+                targetSection.style.display = "block";
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }, 500);
+          }
+        });
+      });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const faqRows = document.querySelectorAll(".faq-row");
+
+    faqRows.forEach(row => {
+      row.addEventListener("click", function() {
+        const answerRow = row.nextElementSibling;
+        if (answerRow && answerRow.classList.contains("faq-answer")) {
+          answerRow.classList.toggle("show");
+        }
+      });
+    });
+  });
+
+    function toggleTable() {
+        var versionContainer = document.getElementById('versionContainer');
+        var versionTitle = document.getElementById('versionTitle');
+
+        if (versionContainer.classList.contains('show')) {
+            versionContainer.classList.remove('show');
+            setTimeout(() => versionContainer.classList.add('hidden'), 500);
+            versionTitle.classList.remove('show');
+        } else {
+            versionContainer.classList.remove('hidden');
+            setTimeout(() => versionContainer.classList.add('show'), 10);
+            setTimeout(() => versionTitle.classList.add('show'), 300);
+        }
+    }
+
+    function installVersion(version) {
+      if (!window.usersAuth || !window.usersAuth.currentUser) {
+        if (window.showAuthPopup) {
+           window.showAuthPopup();
+        }
+
+        document.querySelectorAll("body > *:not(header):not(footer)").forEach(el => {
+          el.style.display = "none";
+        });
+        const signInSection = document.getElementById("SignIn");
+        if (signInSection) {
+          signInSection.style.display = "block";
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+        return;
+      }
+
+      // במידה ונרצה להחזיר התקנה נמחק מפה את ההשבתה
+      // var filePath = "Versions/Atipria (" + version + ").rar";
+      // window.location.href = filePath;
+    }
+
+    function toggleComparison() {
+        var contentContainer = document.getElementById('additionalContentSideBySide');
+        var contentTitle = contentContainer.querySelector('.content-title');
+
+        if (contentContainer.classList.contains('show')) {
+            contentContainer.classList.remove('show');
+            setTimeout(() => contentContainer.classList.add('hidden'), 500);
+            contentTitle.classList.remove('show');
+        } else {
+            contentContainer.classList.remove('hidden');
+            setTimeout(() => contentContainer.classList.add('show'), 10);
+            setTimeout(() => contentTitle.classList.add('show'), 300);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        ["AboutUs", "Pricing-page", "contact", "SignIn"].forEach(id => {
+            const section = document.getElementById(id);
+            if (section) section.style.display = "none";
+        });
+
+        document.querySelectorAll(".nav-link").forEach(link => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            document.querySelectorAll("body > *:not(header):not(footer)").forEach(el => {
+              el.style.display = "none";
+            });
+
+            switch (this.id) {
+              case "nav-home":
+                goHome();
+                break;
+              case "nav-AboutUs":
+                document.getElementById("AboutUs").style.display = "block";
+                break;
+              case "nav-Pricing":
+                document.getElementById("Pricing-page").style.display = "block";
+                break;
+              case "nav-contact":
+                document.getElementById("contact").style.display = "block";
+                break;
+              case "nav-SignIn":
+                document.getElementById("SignIn").style.display = "block";
+                break;
+
+              case "nav-Account":
+                document.getElementById("UserArea").style.display = "block";
+                if (typeof renderUserArea === "function" && usersAuth.currentUser) {
+                  renderUserArea(usersAuth.currentUser);
+                }
+                break;
+            }
+          });
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      async function handlePlanClick(btn) {
+        const planTitle   = btn.getAttribute("data-plan-title");
+        const planPrice   = btn.getAttribute("data-plan-price");
+        const planDetails = btn.getAttribute("data-plan-details");
+
+        const currentUser = window.usersAuth?.currentUser || null;
+
+        if (!currentUser) {
+          return;
+        }
+
+        if (!window.PurchaseRules || !window.PurchaseRules.PLAN_TIERS) {
+          openPaymentModal(planTitle, planPrice, planDetails);
+          return;
+        }
+
+        const tiers = window.PurchaseRules.PLAN_TIERS;
+
+        const clickedTier = tiers[planTitle] ?? -1;
+
+        let existingPlan = null;
+        let existingTier = -1;
+        try {
+          const doc = await window.usersDB
+            .collection("users")
+            .doc(currentUser.uid)
+            .get();
+
+          if (doc.exists) {
+            existingPlan = doc.data().plan || null;
+            existingTier = existingPlan ? (tiers[existingPlan] ?? -1) : -1;
+          }
+        } catch (e) {
+          console.warn("Failed to read current plan:", e);
+        }
+
+        if (!existingPlan || existingTier < 0 || clickedTier > existingTier) {
+          openPaymentModal(planTitle, planPrice, planDetails, existingPlan);
+          return;
+        }
+
+        if (clickedTier === existingTier) {
+          alert("You already have a package at this level this month. You can only upgrade to a higher package!");
+          return;
+        }
+
+        if (clickedTier < existingTier) {
+          showDowngradePopup(existingPlan);
+          return;
+        }
+      }
+
+      function openPaymentModal(planTitle, planPrice, planDetails, previousPlan) {
+        const modal = document.getElementById("purchase-modal");
+        modal.querySelector(".modal-left .payment-info .plan-name").innerText = planTitle;
+        modal.querySelector(".modal-left .payment-info .plan-price").innerText = planPrice;
+
+        const detailsList = modal.querySelector(".modal-left .payment-info .package-list");
+        detailsList.innerHTML = "";
+        if (planDetails) {
+          planDetails.split(",").forEach(function (detail) {
+            const li = document.createElement("li");
+            li.textContent = detail.trim();
+            detailsList.appendChild(li);
+          });
+        }
+
+        if (previousPlan) {
+          modal.setAttribute("data-previous-plan", previousPlan);
+        } else {
+          modal.removeAttribute("data-previous-plan");
+        }
+
+        modal.setAttribute("data-selected-plan", planTitle);
+        modal.setAttribute("data-selected-plan-details", planDetails || "");
+        modal.style.display = "block";
+      }
+
+      function showDowngradePopup(existingPlan) {
+        const backdrop = document.getElementById("downgrade-popup-backdrop");
+        const popup    = document.getElementById("downgrade-popup");
+        if (!backdrop || !popup) return;
+
+        popup.setAttribute("data-existing-plan", existingPlan || "");
+        backdrop.style.display = "flex";
+      }
+
+      function hideDowngradePopup() {
+        const backdrop = document.getElementById("downgrade-popup-backdrop");
+        const popup    = document.getElementById("downgrade-popup");
+        if (!backdrop || !popup) return;
+        popup.removeAttribute("data-existing-plan");
+        backdrop.style.display = "none";
+      }
+
+      document.body.addEventListener("click", function (event) {
+        const btn = event.target.closest(".plan-btn");
+        if (btn && btn.hasAttribute("data-plan-title")) {
+          event.preventDefault();
+          handlePlanClick(btn);
+          return;
+        }
+
+        if (event.target.matches("#close-modal")) {
+          document.getElementById("purchase-modal").style.display = "none";
+        }
+      });
+
+      window.addEventListener("click", function (event) {
+        const modal = document.getElementById("purchase-modal");
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+
+      document.getElementById("downgrade-cancel")?.addEventListener("click", () => {
+        hideDowngradePopup();
+      });
+
+      document.getElementById("downgrade-confirm")?.addEventListener("click", async () => {
+        const user = window.usersAuth?.currentUser || null;
+        if (!user) {
+          hideDowngradePopup();
+          alert("You must log in to make a change to a package.");
+          return;
+        }
+
+        try {
+          if (window.PurchaseRules?.requestCancelAtPeriodEnd && window.usersDB) {
+            await window.PurchaseRules.requestCancelAtPeriodEnd(window.usersDB, user);
+          } else if (window.usersDB) {
+            await window.usersDB
+              .collection("users")
+              .doc(user.uid)
+              .set(
+                {
+                  cancelAtPeriodEnd: true,
+                  cancelRequestedAt: firebase.firestore.FieldValue.serverTimestamp(),
+                },
+                { merge: true }
+              );
+          }
+
+          hideDowngradePopup();
+          alert("Your package has been marked for cancellation at the end of the month. After cancellation, you can choose a cheaper package.");
+        } catch (e) {
+          console.error(e);
+          hideDowngradePopup();
+          alert("We were unable to mark the cancellation. Please try again later.");
+        }
+      });
+
+    });
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+<script src="JAVA/planRules.js"></script>
+
+<script>
+  const usersConfig = {
+    apiKey: "AIzaSyAh7N979o2VZ5tJGsbFkBRUZcJwISxfCoI",
+    authDomain: "atipria-users.firebaseapp.com",
+    projectId: "atipria-users",
+    storageBucket: "atipria-users.appspot.com",
+    messagingSenderId: "277286791911",
+    appId: "1:277286791911:web:827ddeffe9d217b8521042",
+    measurementId: "G-GMH2GCM7JY"
+  };
+
+  const usersApp  = firebase.initializeApp(usersConfig, "usersApp");
+  const usersAuth = usersApp.auth();
+  const usersDB   = usersApp.firestore();
+
+  window.usersAuth = usersAuth;
+  window.usersDB   = usersDB;
+
+  const pickDefined = (obj) =>
+    Object.fromEntries(
+      Object.entries(obj).filter(([, v]) => v !== undefined && v !== null && v !== "")
+    );
+
+  async function ensureUserDoc(user) {
+    if (!user) return;
+    const ref = usersDB.collection("users").doc(user.uid);
+    const snap = await ref.get();
+
+    if (!snap.exists) {
+      await ref.set(pickDefined({
+        uid: user.uid,
+        email: user.email || null,
+        name: user.displayName || null,
+        isAnonymous: !!user.isAnonymous,
+        createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+      }));
+    } else {
+      await ref.set(pickDefined({
+        email: user.email || undefined,
+        name: user.displayName || undefined,
+        isAnonymous: !!user.isAnonymous,
+        updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
+      }), { merge: true });
+    }
+  }
+
+  async function upsertUserDoc(user, extra = {}) {
+    if (!user) return;
+    const ref = usersDB.collection("users").doc(user.uid);
+
+    await ensureUserDoc(user);
+
+    const payload = pickDefined({
+      uid: user.uid,
+      email: user.email || undefined,
+      name: extra.name ?? user.displayName ?? undefined,
+      phone: extra.phone,
+      company: extra.company,
+      isAnonymous: extra.isAnonymous ?? !!user.isAnonymous,
+      updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
+      ...extra
+    });
+
+    await ref.set(payload, { merge: true });
+  }
+
+  function restartCubeAnimation() {
+    const cubes = document.querySelectorAll(".cube");
+    if (!cubes.length) return;
+
+    cubes.forEach(cube => {
+      cube.style.animation = "none";
+      cube.style.webkitAnimation = "none";
+
+      void cube.offsetWidth;
+
+      cube.style.animation = "";
+      cube.style.webkitAnimation = "";
+    });
+  }
+
+  function goHome() {
+    const purchaseModal = document.getElementById("purchase-modal");
+    if (purchaseModal) purchaseModal.style.display = "none";
+
+    const authBackdrop = document.getElementById("auth-popup-backdrop");
+    const authPopup    = document.getElementById("auth-popup");
+    if (authBackdrop) authBackdrop.style.display = "none";
+    if (authPopup)    authPopup.style.display    = "none";
+
+    const loadingScreen = document.getElementById("loading-screen");
+    if (loadingScreen) loadingScreen.classList.remove("show");
+
+    window.location.href = "index.html";
+  }
+
+  const signUpForm = document.getElementById("sign-up");
+  if (signUpForm) {
+    signUpForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const name     = document.getElementById("signup-name").value.trim();
+      const email    = document.getElementById("signup-email").value.trim();
+      const phone    = document.getElementById("signup-phone").value.trim();
+      const company  = document.getElementById("signup-company").value.trim();
+      const pass1    = document.getElementById("signup-password").value;
+      const pass2    = document.getElementById("signup-password2").value;
+      const fb       = document.getElementById("signup-feedback");
+
+      if (pass1 !== pass2) {
+        fb.textContent = "❌ Passwords do not match";
+        return;
+      }
+
+      fb.textContent = "Creating your account...";
+      try {
+        const cred = await usersAuth.createUserWithEmailAndPassword(email, pass1);
+        await cred.user.updateProfile({ displayName: name });
+        await upsertUserDoc(cred.user, { name, phone, company, isAnonymous: false });
+        fb.textContent = "✅ Account created! You are signed in.";
+
+        goHome();
+
+      } catch (err) {
+        console.error(err);
+        fb.textContent = "❌ " + (err.message || "Sign up failed");
+      }
+    });
+  }
+
+  const signInForm = document.getElementById("sign-in");
+  if (signInForm) {
+    signInForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = document.getElementById("signin-email").value.trim();
+      const pass  = document.getElementById("signin-password").value;
+      const fb    = document.getElementById("signin-feedback");
+      const remember = document.getElementById("remember-me").checked;
+
+      fb.textContent = "Signing you in...";
+      try {
+        await usersAuth.setPersistence(
+          remember ? firebase.auth.Auth.Persistence.LOCAL : firebase.auth.Auth.Persistence.SESSION
+        );
+        const cred = await usersAuth.signInWithEmailAndPassword(email, pass);
+
+        await ensureUserDoc(cred.user);
+        fb.textContent = "✅ Signed in";
+
+        goHome();
+
+      } catch (err) {
+        console.error(err);
+        fb.textContent = "❌ " + (err.message || "Sign in failed");
+      }
+    });
+  }
+
+  const forgotLink = document.getElementById("forgot-link");
+  if (forgotLink) {
+    forgotLink.addEventListener("click", async (e) => {
+      e.preventDefault();
+      const email = document.getElementById("signin-email").value.trim();
+      if (!email) {
+        alert("Enter your email above and click again.");
+        return;
+      }
+      try {
+        await usersAuth.sendPasswordResetEmail(email);
+        alert("Password reset email sent.");
+      } catch (err) {
+        alert("Failed: " + (err.message || "Unknown error"));
+      }
+    });
+  }
+
+  const googleProvider = new firebase.auth.GoogleAuthProvider();
+
+  async function googleFlow() {
+    try {
+      const useRedirect = window.matchMedia("(max-width: 640px)").matches;
+
+      if (useRedirect) {
+        await usersAuth.signInWithRedirect(googleProvider);
+      } else {
+        const cred = await usersAuth.signInWithPopup(googleProvider);
+        await upsertUserDoc(cred.user, { isAnonymous: false, name: cred.user.displayName });
+
+        goHome();
+      }
+    } catch (err) {
+      console.error("Google sign-in failed:", err);
+      alert("Google sign-in failed: " + (err.message || ""));
+    }
+  }
+
+  document.getElementById("google-signin")?.addEventListener("click", googleFlow);
+  document.getElementById("google-signup")?.addEventListener("click", googleFlow);
+
+
+  usersAuth.onAuthStateChanged(async (user) => {
+    const welcome    = document.getElementById("welcome-text");
+    const signInNav  = document.getElementById("nav-SignIn");
+    const accountNav = document.getElementById("nav-Account");
+
+    if (user) {
+      await ensureUserDoc(user);
+
+      if (welcome) welcome.textContent = "👋 Welcome" + (user.displayName ? `, ${user.displayName}` : "");
+      addOrUpdateSignOutButton();
+
+      if (signInNav)  signInNav.style.display  = "none";
+      if (accountNav) accountNav.style.display = "inline-block";
+
+      if (document.getElementById("UserArea")?.style.display !== "none") {
+        renderUserArea(user);
+      }
+    } else {
+      if (welcome) welcome.textContent = "👋 Welcome";
+      removeSignOutButton();
+      if (signInNav)  signInNav.style.display  = "inline-block";
+      if (accountNav) accountNav.style.display = "none";
+    }
+  });
+
+  function addOrUpdateSignOutButton() {
+    if (document.getElementById("nav-SignOut")) return;
+    const nav = document.querySelector(".nav");
+    const a = document.createElement("a");
+    a.className = "nav-link";
+    a.id = "nav-SignOut";
+    a.href = "#";
+    a.textContent = "Sign Out";
+    a.addEventListener("click", async (e) => {
+      e.preventDefault();
+      await usersAuth.signOut();
+      alert("Signed out");
+      document.querySelectorAll("body > *:not(header):not(footer)").forEach(el => el.style.display = "none");
+      document.querySelector(".main").style.display = "block";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    nav.appendChild(a);
+  }
+  function removeSignOutButton() {
+    const a = document.getElementById("nav-SignOut");
+    if (a) a.remove();
+  }
+
+  async function renderUserArea(user) {
+    const nameEl    = document.getElementById("ua-name");
+    const emailEl   = document.getElementById("ua-email");
+    const phoneEl   = document.getElementById("ua-phone");
+    const companyEl = document.getElementById("ua-company");
+    const planP     = document.getElementById("ua-plan");
+    const tbody     = document.getElementById("ua-purchases");
+    const fb        = document.getElementById("ua-feedback");
+
+    if (!user) return;
+
+    if (fb) fb.textContent = "";
+    if (emailEl) emailEl.value = user.email || "";
+    if (nameEl)  nameEl.value  = user.displayName || "";
+
+    try {
+      const doc = await usersDB.collection("users").doc(user.uid).get();
+      const profile = doc.exists ? doc.data() : {};
+
+      if (phoneEl)   phoneEl.value   = profile.phone   || "";
+      if (companyEl) companyEl.value = profile.company || "";
+      if (planP) {
+        planP.textContent = profile.plan
+          ? `Plan: ${profile.plan}`
+          : "Plan: Free";
+      }
+
+            if (window.webDB && tbody) {
+        let qs;
+
+        if (window.ensureOrdersAuth) {
+          try {
+            await window.ensureOrdersAuth();
+          } catch (err) {
+            console.warn("ensureOrdersAuth failed:", err);
+          }
+        }
+
+        try {
+          qs = await window.webDB.collection("purchases")
+            .where("email", "==", user.email)
+            .orderBy("timestamp", "desc")
+            .limit(20)
+            .get();
+        } catch (err) {
+          console.warn("Purchases query with orderBy failed, falling back:", err);
+
+          try {
+            qs = await window.webDB.collection("purchases")
+              .where("email", "==", user.email)
+              .limit(20)
+              .get();
+          } catch (err2) {
+            console.error("Purchases query failed completely:", err2);
+            tbody.innerHTML =
+              '<tr><td style="padding:8px;" colspan="5">Failed to load purchases</td></tr>';
+            return;
+          }
+        }
+
+        if (qs.empty) {
+          tbody.innerHTML = '<tr><td style="padding:8px;" colspan="5">No purchases yet</td></tr>';
+        } else {
+          const rows = [];
+          qs.forEach(d => {
+            const p  = d.data();
+            const ts = p.timestamp?.toDate ? p.timestamp.toDate() : null;
+            const when = ts ? ts.toLocaleString() : "-";
+
+            rows.push(`
+              <tr>
+                <td style="padding:8px;border-bottom:1px solid #f3f4f6;">${when}</td>
+                <td style="padding:8px;border-bottom:1px solid #f3f4f6;">${p.plan || "-"}</td>
+                <td style="padding:8px;border-bottom:1px solid #f3f4f6;">${p.paymentMethod || "-"}</td>
+                <td style="padding:8px;border-bottom:1px solid #f3f4f6;">${p.price ?? "-"}</td>
+                <td style="padding:8px;border-bottom:1px solid #f3f4f6;">${p.last4Digits ? "•••• " + p.last4Digits : "-"}</td>
+              </tr>
+            `);
+          });
+          tbody.innerHTML = rows.join("");
+        }
+      }
+
+    } catch (e) {
+      console.error("renderUserArea failed:", e);
+      if (fb) fb.textContent = "❌ Failed to load account data";
+    }
+  }
+  window.renderUserArea = renderUserArea;
+
+  document.getElementById("ua-save")?.addEventListener("click", async () => {
+    const user = usersAuth.currentUser;
+    if (!user) return;
+    const fb = document.getElementById("ua-feedback");
+    fb.textContent = "Saving…";
+
+    const name    = document.getElementById("ua-name").value.trim();
+    const phone   = document.getElementById("ua-phone").value.trim();
+    const company = document.getElementById("ua-company").value.trim();
+
+    try {
+      if (name && name !== (user.displayName || "")) {
+        await user.updateProfile({ displayName: name });
+      }
+      await usersDB.collection("users").doc(user.uid).set(
+        pickDefined({
+          name, phone, company,
+          updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+        }),
+        { merge: true }
+      );
+      fb.textContent = "✅ Saved!";
+    } catch (e) {
+      console.error(e);
+      fb.textContent = "❌ Failed to save changes";
+    }
+  });
+
+  document.getElementById("ua-reset")?.addEventListener("click", async () => {
+    const user = usersAuth.currentUser;
+    if (!user?.email) { alert("No email on this account."); return; }
+    try { await usersAuth.sendPasswordResetEmail(user.email); alert("Password reset email sent."); }
+    catch (e) { alert("Failed: " + (e.message || "Unknown error")); }
+  });
+
+  document.getElementById("ua-delete")?.addEventListener("click", async () => {
+    const user = usersAuth.currentUser;
+    if (!user) return;
+    if (!confirm("Are you sure you want to delete your account? This action cannot be undone.")) return;
+
+    try {
+      if (user.email) {
+        const pass = prompt("Please confirm your password to continue:");
+        if (!pass) return;
+        const cred = firebase.auth.EmailAuthProvider.credential(user.email, pass);
+        await user.reauthenticateWithCredential(cred);
+      }
+      await user.delete();
+      alert("Account deleted.");
+      window.location.href = "index.html";
+    } catch (e) {
+      if (e.code === "auth/requires-recent-login") {
+        try {
+          await usersAuth.currentUser.reauthenticateWithPopup(new firebase.auth.GoogleAuthProvider());
+          await usersAuth.currentUser.delete();
+          alert("Account deleted.");
+          window.location.href = "index.html";
+        } catch (e2) {
+          alert("Failed to delete: " + (e2.message || ""));
+        }
+      } else {
+        alert("Failed: " + (e.message || ""));
+      }
+    }
+  });
+</script>
+
+<script type="module">
+  const firebaseConfig = {
+    apiKey: "AIzaSyChVy3pcEIBaUIAw3yXyABozLzeuAtMKNE",
+    authDomain: "atipria-web.firebaseapp.com",
+    projectId: "atipria-web",
+    storageBucket: "atipria-web.appspot.com",
+    messagingSenderId: "817765154697",
+    appId: "1:817765154697:web:c50354276e11368c4fab58",
+    measurementId: "G-K3LCQT6MZM"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const db   = firebase.firestore();
+
+  async function ensureAuth() {
+    return new Promise((resolve, reject) => {
+      const unsub = auth.onAuthStateChanged(async (user) => {
+        try {
+          if (!user) await auth.signInAnonymously();
+          unsub();
+          resolve(auth.currentUser);
+        } catch (e) { reject(e); }
+      });
+    });
+  }
+
+  window.webDB = db;
+  window.ensureOrdersAuth = ensureAuth;
+
+  function showAuthPopup(){
+    document.getElementById("auth-popup-backdrop").style.display = "block";
+    document.getElementById("auth-popup").style.display = "grid";
+  }
+  function hideAuthPopup(){
+    document.getElementById("auth-popup-backdrop").style.display = "none";
+    document.getElementById("auth-popup").style.display = "none";
+  }
+  document.getElementById("auth-popup-cancel")?.addEventListener("click", hideAuthPopup);
+  document.getElementById("auth-popup-go")?.addEventListener("click", () => {
+    hideAuthPopup();
+    document.querySelectorAll("body > *:not(header):not(footer)").forEach(el=>el.style.display="none");
+    document.getElementById("SignIn").style.display = "block";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  const onlyDigits = s => (s||"").replace(/\D+/g,"");
+  function luhn(num){
+    const s = onlyDigits(num);
+    if (s.length < 13 || s.length > 19) return false;
+    let sum = 0, dbl = false;
+    for (let i = s.length - 1; i >= 0; i--) {
+      let d = +s[i];
+      if (dbl) { d *= 2; if (d > 9) d -= 9; }
+      sum += d; dbl = !dbl;
+    }
+    return sum % 10 === 0;
+  }
+  function monthIndex(m){
+    const map = {january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};
+    return map[(m||"").toLowerCase()] || 0;
+  }
+  function setError(el, msg){
+    el.classList.add("input-error");
+    const d = document.createElement("div");
+    d.className = "field-error";
+    d.textContent = msg;
+    el.insertAdjacentElement("afterend", d);
+  }
+  function clearErrors(){
+    document.querySelectorAll(".input-error").forEach(e=>e.classList.remove("input-error"));
+    document.querySelectorAll(".field-error").forEach(e=>e.remove());
+  }
+  function focusFirstError(){
+    const bad = document.querySelector(".input-error");
+    if (bad && typeof bad.focus === "function") bad.focus();
+  }
+
+  const ccEl  = document.getElementById("creditCardInput");
+  const cvcEl = document.getElementById("cvcInput");
+  ccEl?.addEventListener("input", ()=>{ ccEl.value  = onlyDigits(ccEl.value).slice(0,19); });
+  cvcEl?.addEventListener("input",()=>{ cvcEl.value = onlyDigits(cvcEl.value).slice(0,4); });
+
+  document.body.addEventListener("click", (ev) => {
+    const btn = ev.target.closest(".plan-btn");
+    if (!btn) return;
+    if (!window.usersAuth?.currentUser) {
+      ev.preventDefault();
+      showAuthPopup();
+      return;
+    }
+  });
+
+  const form = document.getElementById("payment-form");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const fb = document.getElementById("payment-feedback");
+    const payBtn = form.querySelector(".pay-now-btn");
+    fb.innerText = "";
+    clearErrors();
+
+    const appUser = window.usersAuth?.currentUser || null;
+    if (!appUser) {
+      fb.innerText = "❌ You must log in/register before payment.";
+      showAuthPopup();
+      return;
+    }
+
+    const modal        = document.getElementById("purchase-modal");
+    const companySel   = document.getElementById("supported-company");
+    const monthSel     = document.getElementById("expiration-month");
+    const yearSel      = document.getElementById("expiration-year");
+
+    const rawCard      = (ccEl.value || "").replace(/\s+/g, "");
+    const cardNumber   = rawCard;
+    const paymentMethod= (companySel.value || "").trim();
+    const mm           = monthIndex(monthSel.value);
+    const yyRaw        = (yearSel.value || "").trim();
+    const yy           = /^\d{4}$/.test(yyRaw) ? +yyRaw : 0;
+    const cvc          = onlyDigits(cvcEl.value);
+
+    let ok = true;
+
+    if (!paymentMethod){ ok=false; setError(companySel, "Select a payment method/company"); }
+
+    const isCardBrand = /visa|mastercard|american express|discover/i.test(paymentMethod);
+    const isAltMethod = /paypal|apple pay|google pay/i.test(paymentMethod);
+    if (isAltMethod) {
+      ok = false;
+      setError(companySel, "This payment method is not yet supported here. Please choose a card brand.");
+    }
+
+    if (!cardNumber){ ok=false; setError(ccEl, "Enter card number"); }
+    if (!mm){ ok=false; setError(monthSel, "Select a month"); }
+    if (!yy){ ok=false; setError(yearSel, "Select a year"); }
+    if (!cvc){ ok=false; setError(cvcEl, "Enter CVC/CVV"); }
+
+    if (isCardBrand && cardNumber && !luhn(cardNumber)){
+      ok=false; setError(ccEl, "Invalid card number");
+    }
+
+    if (mm && yy){
+      const now = new Date();
+      const endOfMonth = new Date(yy, mm, 0, 23,59,59,999);
+      if (endOfMonth < now){ ok=false; setError(yearSel, "Card expired"); }
+    }
+
+    if (isCardBrand){
+      const isAmex = /american express/i.test(paymentMethod);
+      if (isAmex ? !/^\d{4}$/.test(cvc) : !/^\d{3}$/.test(cvc)){
+        ok=false;
+        setError(cvcEl, isAmex ? "AmEx requires a 4-digit CVC" : "3-digit CVC required");
+      }
+    }
+
+    if (!ok){
+      fb.innerText = "Please complete/correct the details before payment.";
+      focusFirstError();
+      return;
+    }
+
+    try {
+      fb.innerText = "Processing...";
+      payBtn?.setAttribute("disabled","true");
+
+      await ensureAuth();
+
+      const modal     = document.getElementById("purchase-modal");
+      const companySel= document.getElementById("supported-company");
+      const rawCard   = (document.getElementById("creditCardInput").value || "").replace(/\s+/g, "");
+      const paymentMethod = (companySel.value || "").trim();
+
+      const planName  = modal.querySelector(".plan-name")?.innerText || "Unknown";
+      const priceText = modal.querySelector(".plan-price")?.innerText || "";
+
+      const PLAN_DETAILS_FALLBACK = {
+        "Free Plan": "Basic Deepfake Detection, Limited Image Recognition, Devices: 1 device",
+        "Premium Plan": "Advanced Deepfake Detection, Full Image Recognition, AI-Powered Security Solutions, Devices: Up to 5 devices",
+        "Business Plan": "Enterprise Deepfake Detection, Bulk Image Processing, Custom AI Security Features, Devices: Up to 20 devices",
+        "Enterprise Plan": "AI-Powered Deepfake & Fraud Detection, Unlimited Image Recognition, Dedicated AI Security Consultant, Devices: Unlimited"
+      };
+
+      const planDetails =
+        modal.getAttribute("data-selected-plan-details") ||
+        PLAN_DETAILS_FALLBACK[planName] ||
+        "";
+      const m         = priceText.match(/\$([\d.]+)/);
+      const price     = m ? parseFloat(m[1]) : 0;
+
+      let ruleResult = { ok: true, previousPlan: null, code: "NO_RULES" };
+      if (window.PurchaseRules?.canUserPurchasePlan) {
+        ruleResult = await window.PurchaseRules.canUserPurchasePlan(db, appUser, planName);
+        if (!ruleResult.ok) {
+          fb.innerText = "❌ " + (ruleResult.message || "The purchase cannot be made according to package limits");
+          payBtn?.removeAttribute("disabled");
+          return;
+        }
+      } else {
+        console.warn("PurchaseRules not loaded – skipping plan checks");
+      }
+
+      const docRef = await db.collection("purchases").add({
+        userName: appUser.displayName || "User",
+        email: appUser.email || "",
+        uidUsers: appUser.uid,
+        uidWeb: auth.currentUser?.uid || null,
+        plan: planName,
+        planDetails,
+        price,
+        paymentMethod,
+        last4Digits: (rawCard.replace(/\D+/g,"")).slice(-4),
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      });
+
+      try {
+        if (window.PurchaseRules?.recordPlanOnUser && window.usersDB) {
+          await window.PurchaseRules.recordPlanOnUser(
+            window.usersDB,
+            appUser,
+            planName,
+            { upgradedFrom: ruleResult.previousPlan || null }
+          );
+        } else if (window.usersDB) {
+          await window.usersDB
+            .collection("users")
+            .doc(appUser.uid)
+            .set(
+              {
+                plan: planName,
+                updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
+              },
+              { merge: true }
+            );
+        }
+      } catch (e) {
+        console.warn("Failed to update user plan info:", e);
+      }
+
+      const receiptSnapshot = {
+        txId: docRef.id,
+        plan: planName,
+        planDetails,
+        price,
+        paymentMethod,
+        last4Digits: (rawCard.replace(/\D+/g,"")).slice(-4),
+        userName: appUser.displayName || "User",
+        email: appUser.email || "",
+        clientTime: new Date().toISOString()
+      };
+      sessionStorage.setItem("lastReceipt", JSON.stringify(receiptSnapshot));
+
+      fb.innerText = "✅ Payment saved successfully! Redirecting to receipt…";
+
+      window.location.href = `receipt.html?tx=${encodeURIComponent(docRef.id)}`;
+
+    } catch (error) {
+      console.error("❌ Error saving purchase:", error);
+      fb.innerText = "❌ Failed to save your purchase: " + (error?.message || "");
+    } finally {
+      payBtn?.removeAttribute("disabled");
+    }
+  });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
