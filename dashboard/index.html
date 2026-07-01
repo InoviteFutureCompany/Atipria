@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard · Atipria</title>
+  <link rel="icon" href="../Data/webdesign/Atipria_logo-removebg-preview.png" type="image/png">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-shell">
+    <aside class="dashboard-sidebar">
+      <a class="brand" href="../index.html">
+        <img src="../Data/webdesign/Atipria_logo-removebg-preview.png" alt="Atipria logo">
+        <span><strong>ATIPRIA</strong><small>ACCOUNT</small></span>
+      </a>
+      <nav>
+        <a class="active" href="#overview"><i class="fa-solid fa-chart-line"></i> Overview</a>
+        <a href="#profile"><i class="fa-regular fa-user"></i> Profile</a>
+        <a href="#subscription"><i class="fa-regular fa-credit-card"></i> Subscription</a>
+        <a href="#downloads"><i class="fa-solid fa-download"></i> Downloads</a>
+        <a href="#devices"><i class="fa-solid fa-laptop"></i> Devices</a>
+        <a href="#billing"><i class="fa-solid fa-receipt"></i> Billing</a>
+        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i> Back to site</a>
+      </nav>
+    </aside>
+    <main class="dashboard-main" id="overview">
+      <div class="dashboard-topbar">
+        <div>
+          <h1>My Account</h1>
+          <p>Live account data from Firebase Authentication and Firestore.</p>
+        </div>
+        <div class="header-actions"><a class="btn btn-ghost" href="index.html">Log in</a></div>
+      </div>
+      <div id="dashboard-root">
+        <section class="page-card"><h2>Loading account…</h2><p>Checking sign-in status.</p></section>
+      </div>
+    </main>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="../JAVA/auth-v2.js"></script>
+  <script src="../JAVA/site-v2.js"></script>
+</body>
+</html>

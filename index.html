@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Atipria - Trust What's Real</title>
+<link href="Data/webdesign/Atipria_logo-removebg-preview.png" rel="icon" type="image/png"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</link></head>
+<body>
+<div class="page-glow"></div>
+<header class="site-header" id="top">
+<a aria-label="Atipria home" class="brand" href="index.html">
+<img alt="Atipria logo" src="Data/webdesign/Atipria_logo-removebg-preview.png"/>
+<span><strong>ATIPRIA</strong><small>TRUST WHAT'S REAL</small></span>
+</a>
+<button aria-label="Open menu" class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+<nav class="nav"><a href="product.html">Product</a><a href="product.html#business">For Business</a><a href="downloads.html">Downloads</a><a href="documentation.html">Resources</a><a href="pricing.html">Pricing</a><a href="about.html">About</a></nav>
+<div class="header-actions">
+<a class="btn btn-ghost" href="dashboard/index.html">Log in</a>
+<a class="btn btn-primary" href="downloads.html"><i class="fa-brands fa-chrome"></i> Install Free Extension</a>
+</div>
+</header>
+<main>
+<section class="hero section-shell">
+<div class="hero-bg-grid"></div>
+<article class="floating-card hero-card card-ai left-top" data-depth="18">
+<span class="status-icon danger"><i class="fa-solid fa-lock"></i></span>
+<div><strong>AI GENERATED</strong><small>97% confidence</small></div>
+</article>
+<article class="floating-card hero-card card-verified top-center" data-depth="10">
+<span class="status-icon ok"><i class="fa-solid fa-check"></i></span>
+<div><strong>VERIFIED</strong><small>Source: Reuters</small></div>
+</article>
+<article class="floating-card hero-card card-voice right-top" data-depth="14">
+<div><strong>VOICE CLONED</strong><small>89% confidence</small></div>
+<div class="wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</article>
+<article class="floating-card hero-card card-warning left-mid" data-depth="12">
+<span class="status-icon warn"><i class="fa-solid fa-triangle-exclamation"></i></span>
+<div><strong>POSSIBLE MANIPULATION</strong><small>76% confidence</small></div>
+</article>
+<article class="floating-card news-card right-mid" data-depth="20">
+<small>BBCNEWS</small>
+<strong>Markets crash after<br/>central bank shock</strong>
+<span><i class="fa-solid fa-circle-check"></i> VERIFIED</span>
+</article>
+<article class="floating-card portrait-card right-bottom" data-depth="9">
+<img alt="AI generated example" src="Data/images/fake/fake_image_6.jpg"/>
+<div class="scan-lines"></div>
+<span>AI GENERATED<br/><small>89% confidence</small></span>
+</article>
+<article class="floating-card mini-panel left-bottom" data-depth="16">
+<span><i class="fa-solid fa-circle-nodes"></i> Deepfake video</span>
+<span>Audio synthetic</span>
+<span>Face mismatch</span>
+<span>Background inconsistency</span>
+</article>
+<div class="hero-content reveal">
+<p class="eyebrow">THE INTERNET IS EVOLVING</p>
+<h1>Know what's real.<br/><span>Trust</span> with confidence.</h1>
+<p class="hero-copy">Atipria analyzes, verifies and protects you from AI-generated and manipulated content across the web, in real time.</p>
+<div class="hero-cta">
+<a class="btn btn-primary btn-large" href="downloads.html"><i class="fa-brands fa-chrome"></i> Install Extension</a>
+<a class="btn btn-ghost btn-large" href="#how"><i class="fa-regular fa-circle-play"></i> Watch how it works</a>
+</div>
+<p class="works">works everywhere you browse</p>
+<div aria-label="Supported browsers" class="browser-icons">
+<i class="fa-brands fa-chrome"></i><i class="fa-brands fa-edge"></i><i class="fa-brands fa-firefox-browser"></i><i class="fa-brands fa-brave"></i><i class="fa-brands fa-opera"></i>
+</div>
+</div>
+</section>
+<section class="truth-section section-shell reveal">
+<div class="truth-copy">
+<h2>The truth is <span>harder to find</span> than ever.</h2>
+<p>AI content is flooding the internet. Most people can't tell the difference.</p>
+</div>
+<div class="stat"><strong data-count="15">0</strong><span>M+</span><p>AI images<br/>shared daily</p></div>
+<div class="stat"><strong data-count="5">0</strong><span>M+</span><p>Deepfake videos<br/>online</p></div>
+<div class="stat"><strong>1 in 3</strong><p>People can't identify<br/>AI content</p></div>
+<div class="truth-copy danger-copy">
+<h2>It's not just hard.<br/>It's <span>dangerous.</span></h2>
+<p>Misinformation. Scams. Fraud. Reputation damage. All powered by AI.</p>
+</div>
+</section>
+<section class="quiz section-shell reveal" id="demo">
+<div class="quiz-intro">
+<p class="eyebrow">Try it yourself</p>
+<h2>Can you spot<br/>the <span>fake?</span></h2>
+<p>Most people can't.<br/>You're not alone.</p>
+<button class="btn btn-ghost" id="reveal-answer">Reveal Answer</button>
+</div>
+<div class="image-choice" data-choice="ai">
+<b>A</b>
+<img alt="Image A" src="Data/images/fake/fake_image_1.jpg"/>
+<span></span>
+</div>
+<div class="image-choice" data-choice="real">
+<b>B</b>
+<img alt="Image B" src="Data/images/real/real_image_2.jpg"/>
+<span></span>
+</div>
+<aside class="result-panel">
+<p>Result</p>
+<h3 id="quiz-result">Wrong.</h3>
+<strong>97% of people also guessed wrong.</strong>
+<div class="analysis-card">
+<b>Atipria detected it in <span>3 seconds</span></b>
+<div class="bar"><label>Lighting consistency</label><i style="--w:94%"></i><em>94%</em></div>
+<div class="bar"><label>Pixel pattern analysis</label><i style="--w:91%"></i><em>91%</em></div>
+<div class="bar"><label>Metadata inspection</label><i style="--w:89%"></i><em>89%</em></div>
+<div class="bar"><label>Noise &amp; artifact detection</label><i style="--w:88%"></i><em>88%</em></div>
+<a href="#features">See full analysis <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</aside>
+</section>
+<section class="how reveal" id="how">
+<div class="section-title">
+<h2>How <span>Atipria</span> works</h2>
+<p>Simple in the background. Powerful when it matters.</p>
+</div>
+<div class="timeline">
+<article><div class="step-icon"><i class="fa-solid fa-download"></i><small>1</small></div><h3>Install</h3><p>Add Atipria to your browser in one click.</p></article>
+<article><div class="step-icon"><i class="fa-regular fa-eye"></i><small>2</small></div><h3>Browse as usual</h3><p>We analyze content silently in the background.</p></article>
+<article><div class="step-icon"><i class="fa-solid fa-brain"></i><small>3</small></div><h3>AI detects &amp; verifies</h3><p>Advanced models check multiple signals in real time.</p></article>
+<article><div class="step-icon"><i class="fa-solid fa-shield-halved"></i><small>4</small></div><h3>Get instant alerts</h3><p>Know what's real, what's fake, and what to question.</p></article>
+</div>
+</section>
+<section class="features section-shell reveal" id="features">
+<div class="section-title compact"><h2>Powerful <span>protection.</span> Built for the real world.</h2></div>
+<div class="feature-grid">
+<article><i class="fa-solid fa-image"></i><h3>AI Content Detection</h3><p>Images, videos, audio and text analysis.</p></article>
+<article><i class="fa-solid fa-head-side-virus"></i><h3>Deepfake &amp; Voice</h3><p>Detect manipulated video and cloned voices.</p></article>
+<article><i class="fa-solid fa-code-branch"></i><h3>Source Verification</h3><p>Check origins and verify metadata instantly.</p></article>
+<article><i class="fa-regular fa-bell"></i><h3>Real-time Alerts</h3><p>Instant warnings when suspicious content is detected.</p></article>
+<article><i class="fa-solid fa-puzzle-piece"></i><h3>Browser Protection</h3><p>Works across sites, social media and messaging apps.</p></article>
+<article><i class="fa-solid fa-user-shield"></i><h3>Privacy First</h3><p>Your data stays private. Always. No tracking.</p></article>
+</div>
+<a class="inline-link" href="#pricing">See all features <i class="fa-solid fa-arrow-right"></i></a>
+</section>
+<section class="trusted section-shell reveal" id="trusted">
+<div class="trusted-left">
+<h2>Trusted by <span>people</span> who can't afford to be wrong.</h2>
+<div class="audiences">
+<article><i class="fa-regular fa-newspaper"></i><b>Journalists</b><small>Report the truth.</small></article>
+<article><i class="fa-solid fa-microscope"></i><b>Researchers</b><small>Verify before publish.</small></article>
+<article><i class="fa-solid fa-graduation-cap"></i><b>Educators</b><small>Teach with confidence.</small></article>
+<article><i class="fa-solid fa-magnifying-glass"></i><b>Investigators</b><small>Find what others hide.</small></article>
+<article><i class="fa-regular fa-building"></i><b>Businesses</b><small>Protect your brand.</small></article>
+</div>
+</div>
+<blockquote>
+<i class="fa-solid fa-quote-left"></i>
+<p>Atipria has become an essential part of our newsroom workflow. It helps us verify in seconds what used to take hours.</p>
+<footer><span></span><b>Emma R.</b><small>Senior Editor, Global News</small></footer>
+</blockquote>
+</section>
+<section class="pricing section-shell reveal" id="pricing">
+<div class="section-title compact"><h2>Simple pricing. <span>Choose the best plan for your needs.</span></h2></div>
+<div class="pricing-grid">
+<article class="price-card" data-plan="Free Plan">
+<h3>Free Plan</h3>
+<p>Basic features for personal use.</p>
+<strong>$0 <small>/ month</small></strong>
+<ul>
+<li>Basic Deepfake Detection</li>
+<li>Limited Image Recognition</li>
+<li class="not-included">Advanced Security Solutions</li>
+<li>Devices: 1 device</li>
+</ul>
+<button type="button" class="btn btn-ghost">Get Started</button>
+</article>
+<article class="price-card featured" data-plan="Premium Plan">
+<mark>Sale!!</mark>
+<h3>Premium Plan</h3>
+<p>Advanced features for professionals.</p>
+<div class="old-price">$19.99 / month</div>
+<strong>$9.99 <small>/ month</small></strong>
+<ul>
+<li>Advanced Deepfake Detection</li>
+<li>Full Image Recognition</li>
+<li>AI-Powered Security Solutions</li>
+<li>Devices: 5 devices</li>
+</ul>
+<button type="button" class="btn btn-primary">Upgrade Now</button>
+</article>
+<article class="price-card" data-plan="Business Plan">
+<mark>Sale!!</mark>
+<h3>Business Plan</h3>
+<p>Comprehensive solutions for businesses.</p>
+<div class="old-price">$49.99 / month</div>
+<strong>$24.99 <small>/ month</small></strong>
+<ul>
+<li>Enterprise Deepfake Detection</li>
+<li>Bulk Image Processing</li>
+<li>Custom AI Security Features</li>
+<li>Devices: 20 devices</li>
+</ul>
+<button type="button" class="btn btn-primary">Get Business</button>
+</article>
+<article class="price-card" data-plan="Enterprise Plan">
+<h3>Enterprise Plan</h3>
+<p>Ultimate security and AI solutions for enterprises.</p>
+<strong class="contact-price">Contact Sales <small>for pricing</small></strong>
+<ul>
+<li>AI-Powered Deepfake &amp; Fraud Detection</li>
+<li>Unlimited Image Recognition</li>
+<li>Dedicated AI Security Consultant</li>
+<li>Devices: Unlimited devices</li>
+</ul>
+<button type="button" class="btn btn-ghost">Contact Sales</button>
+</article>
+</div>
+</section>
+<section class="faq reveal" id="faq">
+<div class="section-title compact"><h2>Frequently asked questions</h2><p>Clear answers for new users before they install Atipria.</p></div>
+<div class="faq-accordion">
+<details open>
+<summary><span>How accurate is Atipria?</span><i class="fa-solid fa-plus"></i></summary>
+<p>Atipria analyzes dozens of signals — including metadata, lighting consistency, compression artifacts, source information and AI patterns. Instead of relying on a single score, it provides a confidence assessment to help you make informed decisions.</p>
+</details>
+<details>
+<summary><span>Does Atipria store my data?</span><i class="fa-solid fa-plus"></i></summary>
+<p>No. Privacy comes first. Atipria is designed for secure analysis and does not sell or share your personal data.</p>
+</details>
+<details>
+<summary><span>Does it work on every website?</span><i class="fa-solid fa-plus"></i></summary>
+<p>Atipria supports most major websites and social media platforms. Support for additional websites is continuously added through product updates.</p>
+</details>
+<details>
+<summary><span>Can Atipria detect AI images, videos and audio?</span><i class="fa-solid fa-plus"></i></summary>
+<p>Yes. Atipria is designed to analyze AI-generated images, manipulated videos, cloned voices and other suspicious digital media.</p>
+</details>
+<details>
+<summary><span>Is Atipria free?</span><i class="fa-solid fa-plus"></i></summary>
+<p>Yes. The Free Plan includes basic deepfake detection, limited image recognition and 1 device. Premium, Business and Enterprise plans unlock stronger protection and more devices.</p>
+</details>
+<details>
+<summary><span>How long does an analysis take?</span><i class="fa-solid fa-plus"></i></summary>
+<p>Most analyses complete within 2–5 seconds, depending on the media type, quality and complexity.</p>
+</details>
+<details>
+<summary><span>Which browsers are supported?</span><i class="fa-solid fa-plus"></i></summary>
+<p>Chrome is fully supported today. Additional browser support is planned for future releases.</p>
+</details>
+<details>
+<summary><span>Can I trust the results?</span><i class="fa-solid fa-plus"></i></summary>
+<p>No AI detector is perfect. Atipria is built to assist your judgment by combining multiple verification methods instead of relying on a single AI model.</p>
+</details>
+</div>
+</section>
+<section class="final-cta section-shell reveal">
+<div><h2>Start seeing the internet<br/>with new eyes.</h2><p>Download the free Atipria extension and take back your trust online.</p></div>
+<a class="btn btn-primary btn-large" href="downloads.html"><i class="fa-brands fa-chrome"></i> Install Free Extension</a>
+</section>
+</main>
+<footer class="footer" id="footer">
+<div class="footer-brand"><img alt="Atipria logo" src="Data/webdesign/Atipria_logo-removebg-preview.png"/><p>Building a safer internet by helping you verify what's real and stop what's fake.</p><div><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-x-twitter"></i><i class="fa-brands fa-github"></i></div></div>
+<nav><b>Product</b><a href="product.html">Features</a><a href="index.html#how">How it works</a><a href="downloads.html">Downloads</a><a href="changelog.html">Updates</a></nav>
+<nav><b>Company</b><a href="about.html">About us</a><a href="contact.html">Contact</a><a href="dashboard/index.html">Account</a><a href="pricing.html">Pricing</a></nav>
+<nav><b>Resources</b><a href="documentation.html">Guides</a><a href="changelog.html">Release Notes</a><a href="downloads.html">Previous Versions</a><a href="documentation.html#faq">FAQ</a></nav>
+<form class="newsletter"><b>Stay updated</b><p>Get the latest news on AI threats and updates from Atipria.</p><label><input placeholder="Enter your email" type="email"/><button type="button"><i class="fa-solid fa-arrow-right"></i></button></label></form>
+<div class="footer-bottom"><span>© 2025 Atipria. All rights reserved.</span><span>Privacy Policy    Terms of Service</span></div>
+</footer>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+<script src="JAVA/auth-v2.js"></script>
+<script src="JAVA/site-v2.js"></script>
+</body>
+</html>
