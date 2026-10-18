@@ -245,9 +245,9 @@
       </section>
       <section class="page-card" id="subscription"><h2>Subscription</h2><div class="subscription-row"><div><b>${plan}</b><p>${deviceLimit(plan)} · ${scanLimit(plan)}</p></div><a class="btn btn-primary" href="../pricing.html">View plans</a></div></section>
       <section class="page-card" id="downloads"><h2>Downloads</h2><div class="version-list compact-versions">
-        <div class="version-row"><strong>Atipria 1.1.7</strong><span class="badge">Latest stable</span><span>Chrome Extension</span><a class="btn btn-primary" href="../Versions/Atipria (1.1.7).rar" download>Download</a></div>
-        <div class="version-row"><strong>Atipria 1.1.6</strong><span>Previous</span><span>Chrome Extension</span><a class="btn btn-ghost" href="../Versions/Atipria (1.1.6).rar" download>Download</a></div>
-        <div class="version-row"><strong>Atipria 1.1.5</strong><span>Archive</span><span>Chrome Extension</span><a class="btn btn-ghost" href="../Versions/Atipria (1.1.5).rar" download>Download</a></div>
+        <div class="version-row"><strong>Atipria 1.1.7</strong><span class="badge">Latest stable</span><span>Chrome Extension</span><a class="btn btn-primary" href="https://github.com/InoviteFutureCompany/Atipria/releases/download/v1.1.7/Atipria-1.1.7.rar" download>Download</a></div>
+        <div class="version-row"><strong>Atipria 1.1.6</strong><span>Previous</span><span>Chrome Extension</span><a class="btn btn-ghost" href="https://github.com/InoviteFutureCompany/Atipria/releases/download/v1.1.6/Atipria-1.1.6.rar" download>Download</a></div>
+        <div class="version-row"><strong>Atipria 1.1.5</strong><span>Archive</span><span>Chrome Extension</span><a class="btn btn-ghost" href="https://github.com/InoviteFutureCompany/Atipria/releases/download/v1.1.5/Atipria-1.1.5.rar" download>Download</a></div>
       </div></section>
       <section class="page-card" id="devices"><h2>Devices</h2><div class="device-grid">
         <article><i class="fa-brands fa-chrome"></i><b>Chrome / Windows</b><span>Current browser</span><small>Last seen: now</small></article>
