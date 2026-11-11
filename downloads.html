@@ -14,8 +14,39 @@
 
     <!-- Display-only releases (no download buttons). Remove or move to style.css if you prefer. -->
     <style>
+        /* Aligned columns: name | type | date | download buttons */
+        .version-list .version-row {
+            display: grid !important;
+            grid-template-columns: 1.2fr 1.2fr 1fr 1.6fr;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .version-list .version-row > b,
+        .version-list .version-row > small {
+            text-align: left;
+        }
+
+        .version-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 8px;
+        }
+
         .version-row.display-only-row {
             opacity: 0.7;
+        }
+
+        @media (max-width: 700px) {
+            .version-list .version-row {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .version-actions {
+                justify-content: flex-start;
+            }
         }
     </style>
 
@@ -720,7 +751,16 @@
                     );
 
 
-                    // Download buttons only for installable releases
+                    // Fourth column: always present so columns stay aligned.
+                    // Download buttons only for installable releases.
+
+                    const actions = createElement(
+                        "div",
+                        "version-actions"
+                    );
+
+                    row.appendChild(actions);
+
 
                     if (!displayOnly) {
 
@@ -743,7 +783,7 @@
                             downloadButton.title =
                                 `Download ${asset.name}`;
 
-                            row.appendChild(downloadButton);
+                            actions.appendChild(downloadButton);
 
                         });
 
