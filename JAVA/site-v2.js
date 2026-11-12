@@ -85,3 +85,78 @@ document.querySelectorAll('.faq-accordion details').forEach((item) => {
     });
   });
 });
+
+// Footer copyright year: updates automatically on every page
+document.querySelectorAll('.current-year').forEach((el) => {
+  el.textContent = new Date().getFullYear();
+});
+
+// My Account: the sidebar / mobile tab bar highlights the section you are in,
+// updates when you tap a button or scroll, and keeps the active button in view.
+(function () {
+  const nav = document.querySelector('.dashboard-sidebar nav');
+  if (!nav) return;
+
+  const links = [...nav.querySelectorAll('a[href^="#"]')];
+  if (!links.length) return;
+
+  const idOf = (a) => a.getAttribute('href').slice(1);
+  let lockUntil = 0;
+  let ticking = false;
+
+  function setActive(id, keepInView) {
+    links.forEach((a) => {
+      const on = idOf(a) === id;
+      a.classList.toggle('active', on);
+
+      if (on && keepInView && nav.scrollWidth > nav.clientWidth) {
+        const left =
+          a.getBoundingClientRect().left -
+          nav.getBoundingClientRect().left +
+          nav.scrollLeft -
+          (nav.clientWidth - a.offsetWidth) / 2;
+        nav.scrollTo({ left, behavior: 'smooth' });
+      }
+    });
+  }
+
+  function update() {
+    ticking = false;
+    if (Date.now() < lockUntil) return;
+
+    const bar = document.querySelector('.dashboard-sidebar');
+    const sticky = bar && getComputedStyle(bar).position === 'sticky';
+    const offset = (sticky ? bar.offsetHeight : 0) + 24;
+
+    let current = idOf(links[0]);
+    links.forEach((a) => {
+      const el = document.getElementById(idOf(a));
+      if (el && el.getBoundingClientRect().top - offset <= 0) current = idOf(a);
+    });
+
+    const atBottom =
+      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+    if (atBottom && window.scrollY > 0) current = idOf(links[links.length - 1]);
+
+    setActive(current, true);
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(update);
+    }
+  }
+
+  links.forEach((a) => {
+    a.addEventListener('click', () => {
+      lockUntil = Date.now() + 800;
+      setActive(idOf(a), true);
+    });
+  });
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  window.addEventListener('load', update);
+  setTimeout(update, 900); // dashboard sections render after sign-in check
+})();
