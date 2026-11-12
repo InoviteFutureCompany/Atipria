@@ -441,6 +441,9 @@ button:disabled,.btn:disabled{opacity:.55;cursor:not-allowed;filter:grayscale(.2
     scrollbar-width:none;
     margin:0 -14px;padding:2px 14px 6px;
     scroll-snap-type:x proximity;
+    padding-right:40px;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 34px),transparent);
+    mask-image:linear-gradient(90deg,#000 calc(100% - 34px),transparent);
   }
   .dashboard-sidebar nav::-webkit-scrollbar{display:none}
   .dashboard-sidebar nav a{
@@ -527,4 +530,14 @@ button:disabled,.btn:disabled{opacity:.55;cursor:not-allowed;filter:grayscale(.2
 
 @media (max-width:380px){
   .dash-cards{grid-template-columns:1fr}
+}
+
+/* Active button in the My Account tab bar: clearer on phones */
+@media (max-width:900px){
+  .dashboard-sidebar nav a.active{
+    color:#fff;
+    border-color:rgba(68,247,252,.55);
+    background:linear-gradient(90deg,rgba(68,247,252,.22),rgba(208,1,103,.18));
+    box-shadow:0 0 22px rgba(68,247,252,.14);
+  }
 }
