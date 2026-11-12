@@ -278,7 +278,7 @@
       qs.forEach(d => {
         const p = d.data();
         const ts = p.timestamp?.toDate ? p.timestamp.toDate() : null;
-        rows.push(`<tr><td>${ts ? ts.toLocaleString() : "-"}</td><td>${escapeHTML(p.plan || "-")}</td><td>${escapeHTML(p.paymentMethod || "-")}</td><td>${escapeHTML(p.price ?? "-")}</td><td>${p.last4Digits ? "•••• " + escapeHTML(p.last4Digits) : "-"}</td></tr>`);
+        rows.push(`<tr><td data-label="Date">${ts ? ts.toLocaleString() : "-"}</td><td data-label="Plan">${escapeHTML(p.plan || "-")}</td><td data-label="Method">${escapeHTML(p.paymentMethod || "-")}</td><td data-label="Amount ($)">${escapeHTML(p.price ?? "-")}</td><td data-label="Card">${p.last4Digits ? "•••• " + escapeHTML(p.last4Digits) : "-"}</td></tr>`);
       });
       tbody.innerHTML = rows.join("");
     } catch (e) {
