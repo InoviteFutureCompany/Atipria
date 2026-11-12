@@ -390,7 +390,7 @@
         <div class="footer-bottom">
 
             <span>
-                © <span class="current-year">2026</span> Atipria. All rights reserved.
+                © <span id="current-year">2026</span> Atipria. All rights reserved.
             </span>
 
             <span class="footer-legal">
@@ -869,6 +869,12 @@
         // INITIALIZE
         // ==========================================
 
+        const yearElement = document.getElementById("current-year");
+
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+        
         loadGitHubReleases();
 
     });
