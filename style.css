@@ -413,3 +413,118 @@ button:disabled,.btn:disabled{opacity:.55;cursor:not-allowed;filter:grayscale(.2
   .site-header.open .header-actions .btn{width:100%;min-height:50px;font-size:15px}
   .site-header.open .header-actions .account-pill{max-width:none}
 }
+
+
+/* ===== My Account (dashboard) – mobile layout =====
+   Sidebar becomes a sticky, horizontally scrollable tab bar; cards, forms,
+   downloads and the purchases table are rearranged for phone screens. */
+@media (max-width:900px){
+  .dashboard-shell{grid-template-columns:minmax(0,1fr)}
+  .dashboard-main{min-width:0;width:100%}
+  .dashboard-main [id]{scroll-margin-top:132px}
+
+  .dashboard-sidebar{
+    position:sticky;top:0;z-index:40;height:auto;
+    padding:10px 14px 8px;
+    border-right:0;border-bottom:1px solid var(--line);
+    background:rgba(6,10,26,.96);
+    backdrop-filter:blur(14px);
+    box-shadow:0 12px 30px rgba(0,0,0,.28);
+  }
+  .dashboard-sidebar .brand{margin-bottom:8px}
+  .dashboard-sidebar .brand img{width:36px;height:36px}
+  .dashboard-sidebar .brand strong{font-size:16px}
+
+  .dashboard-sidebar nav{
+    display:flex;grid-template-columns:none;gap:8px;
+    overflow-x:auto;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    margin:0 -14px;padding:2px 14px 6px;
+    scroll-snap-type:x proximity;
+  }
+  .dashboard-sidebar nav::-webkit-scrollbar{display:none}
+  .dashboard-sidebar nav a{
+    flex:0 0 auto;white-space:nowrap;
+    display:inline-flex;align-items:center;gap:8px;
+    min-height:42px;padding:0 14px;font-size:14px;font-weight:700;
+    border:1px solid var(--line);border-radius:999px;
+    background:rgba(15,23,42,.55);
+    scroll-snap-align:start;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .dashboard-sidebar nav a i{width:auto}
+}
+
+@media (max-width:680px){
+  .dashboard-main{padding:16px 14px calc(28px + env(safe-area-inset-bottom,0px))}
+  .dashboard-topbar{margin-bottom:16px}
+  .dashboard-topbar h1{font-size:30px}
+  .dashboard-topbar p{font-size:14px}
+
+  .dashboard-main .page-card{padding:20px 18px;border-radius:16px}
+  .dashboard-main .page-card h2{font-size:22px}
+
+  /* Welcome banner */
+  .dash-hero{align-items:stretch;gap:16px}
+  .dash-hero h1{font-size:32px;word-break:break-word}
+  .dash-hero .btn{width:100%;min-height:50px}
+
+  /* Metric cards: two per row */
+  .dash-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}
+  .dash-cards .page-card{padding:16px 14px}
+  .metric-card span{font-size:11px}
+  .metric-card strong{font-size:22px;word-break:break-word}
+  .metric-card p{font-size:12px!important;overflow-wrap:anywhere}
+
+  /* Profile form: one column, 16px inputs prevent iOS zoom-on-focus */
+  .account-form{grid-template-columns:1fr}
+  .account-form input,.auth-form input{font-size:16px;min-height:50px}
+  .account-actions{flex-direction:column}
+  .account-actions .btn{width:100%;min-height:50px}
+
+  /* Subscription */
+  .subscription-row{flex-direction:column;align-items:stretch;gap:14px}
+  .subscription-row .btn{width:100%;min-height:50px}
+
+  /* Downloads inside the account */
+  .compact-versions .version-row{
+    grid-template-columns:1fr;gap:8px;padding:14px;
+  }
+  .compact-versions .version-row .btn{width:100%;min-height:48px;margin-top:4px}
+
+  /* Devices */
+  .device-grid{grid-template-columns:1fr}
+
+  /* Purchases table -> stacked cards */
+  .table-wrap{overflow:visible}
+  .table-wrap table{min-width:0;display:block;border-radius:0}
+  .table-wrap thead{display:none}
+  .table-wrap tbody{display:grid;gap:12px}
+  .table-wrap tr{
+    display:block;padding:6px 14px;
+    border:1px solid var(--line);border-radius:14px;
+    background:rgba(6,10,26,.55);
+  }
+  .table-wrap tr:hover td{background:transparent}
+  .table-wrap td{
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding:11px 0;text-align:right;overflow-wrap:anywhere;
+    border-bottom:1px solid rgba(235,255,254,.08);
+  }
+  .table-wrap td:last-child{border-bottom:0}
+  .table-wrap td[data-label]:before{
+    content:attr(data-label);flex:0 0 auto;
+    color:var(--muted);font-size:12px;font-weight:700;
+    text-transform:uppercase;letter-spacing:.06em;text-align:left;
+  }
+  .table-wrap td:not([data-label]){display:block;text-align:left}
+
+  /* Sign-in / create account (shown when logged out) */
+  .auth-gate{grid-template-columns:1fr;gap:20px}
+  .auth-tabs button{min-height:46px}
+  .auth-form .btn{min-height:50px}
+}
+
+@media (max-width:380px){
+  .dash-cards{grid-template-columns:1fr}
+}
