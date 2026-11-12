@@ -419,7 +419,9 @@ button:disabled,.btn:disabled{opacity:.55;cursor:not-allowed;filter:grayscale(.2
    Sidebar becomes a sticky, horizontally scrollable tab bar; cards, forms,
    downloads and the purchases table are rearranged for phone screens. */
 @media (max-width:900px){
-  .dashboard-shell{grid-template-columns:minmax(0,1fr)}
+  /* Block layout (not grid) so the sidebar's sticky area is the whole page,
+     otherwise the bar scrolls away after its own height and looks "hidden". */
+  .dashboard-shell{display:block}
   .dashboard-main{min-width:0;width:100%}
   .dashboard-main [id]{scroll-margin-top:132px}
 
