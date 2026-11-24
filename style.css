@@ -543,3 +543,22 @@ button:disabled,.btn:disabled{opacity:.55;cursor:not-allowed;filter:grayscale(.2
     box-shadow:0 0 22px rgba(68,247,252,.14);
   }
 }
+
+/* Hero: move text block up so the Install / Watch buttons are visible above the fold */
+.hero{
+  place-items:start center;
+}
+.hero-content{
+  padding-top:56px;
+  padding-bottom:60px;
+}
+.hero-copy{
+  margin:22px auto 26px;
+}
+.works{margin:20px 0 12px}
+@media (max-width:1100px){
+  .hero-content{padding-top:48px}
+}
+@media (max-width:680px){
+  .hero-content{padding-top:40px}
+}
